@@ -7,11 +7,9 @@ const Footer = () => {
       <div className="container footer-content">
         <div className="logo">Belluomini <span>Advocacia</span></div>
         <div className="social-links">
-          <a href="https://wa.me/5516992534415" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
-          <a href="https://www.instagram.com/belluominiAdvocacia" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-          <a href="https://www.tiktok.com/@belluominiAdvocacia" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
-          <a href="https://www.facebook.com/belluominiAdvocacia" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-          <a href="https://www.linkedin.com/company/belluominiAdvocacia" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          <a href="https://wa.me/5516992271825" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+          <a href="https://www.instagram.com/belluomini.advogados" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a href="https://www.tiktok.com/@belluomini.advocacia" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
         </div>
         <div className="copyright">
           &copy; {new Date().getFullYear()} Belluomini Advocacia - Todos os direitos reservados. OAB/SP 123.456

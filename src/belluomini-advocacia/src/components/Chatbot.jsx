@@ -45,7 +45,7 @@ const Chatbot = () => {
           answer = "Atendemos de segunda a sexta, das 9h às 18h, e sábados das 9h às 13h.";
           break;
         case "Como marcar uma consulta?":
-          answer = "Você pode marcar uma consulta pelo telefone (11) 9999-9999, WhatsApp ou através do formulário de contato em nosso site.";
+          answer = "Você pode marcar uma consulta pelo telefone (16) 99227-1825, WhatsApp ou através do formulário de contato em nosso site.";
           break;
         default:
           answer = "Agradecemos seu contato. Nossa equipe entrará em contato em breve para melhor atendê-lo.";

@@ -11,18 +11,18 @@ const Contact = () => {
         <div className="contact-info">
           <div className="contact-card">
             <FaMapMarkerAlt className="contact-icon" />
-            <h3>Endereço</h3>
-            <p>Av. Paulista, 1000<br />São Paulo - SP<br />CEP: 01310-100</p>
+            <h3>Endereço</h3>S
+            <p>Avenida Orestes Quercia, 1747, Sala B - A<br />São Joaquim da Barra - SP<br />CEP: 14600-000</p>
           </div>
           <div className="contact-card">
             <FaPhone className="contact-icon" />
             <h3>Telefone</h3>
-            <p>(11) 9999-9999<br />(11) 8888-8888</p>
+            <p>(16) 99227-1825</p>
           </div>
           <div className="contact-card">
             <FaEnvelope className="contact-icon" />
             <h3>Email</h3>
-            <p>contato@belluominiAdvocacia.com.br<br />emergencias@belluominiAdvocacia.com.br</p>
+            <p>belluominiadvocacia@gmail.com</p>
           </div>
         </div>
         <div className="contact-form">
