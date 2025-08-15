@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="contact-info">
           <div className="contact-card">
             <FaMapMarkerAlt className="contact-icon" />
-            <h3>Endereço</h3>S
+            <h3>Endereço</h3>
             <p>Avenida Orestes Quercia, 1747, Sala B - A<br />São Joaquim da Barra - SP<br />CEP: 14600-000</p>
           </div>
           <div className="contact-card">

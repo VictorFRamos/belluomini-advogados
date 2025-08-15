@@ -1,15 +1,14 @@
 import React from 'react';
-import { FaBriefcase, FaHome, FaUsers, FaGavel, FaBalanceScale, FaLandmark } from 'react-icons/fa';
+import { FaBriefcase, FaGavel, FaBalanceScale, FaLandmark, FaPiggyBank } from 'react-icons/fa';
 
 const Services = () => {
   const services = [
-    { icon: <FaBriefcase />, title: "Direito Empresarial", description: "Assessoria jurídica completa para empresas, desde constituição até questões contratuais, societárias e recuperação judicial." },
-    { icon: <FaHome />, title: "Direito Imobiliário", description: "Atuação em compra e venda, locação, regularização de imóveis, usucapião e questões condominiais." },
-    { icon: <FaUsers />, title: "Direito de Família", description: "Divórcios, inventários, pensão alimentícia, guarda de menores e demais questões familiares com sensibilidade e discrição." },
-    { icon: <FaGavel />, title: "Direito Civil", description: "Atuação em ações indenizatórias, responsabilidade civil, contratos em geral e obrigações." },
     { icon: <FaBalanceScale />, title: "Direito do Consumidor", description: "Defesa dos direitos do consumidor em relações de consumo, vícios de produtos e serviços." },
-    { icon: <FaLandmark />, title: "Direito Tributário", description: "Consultoria e planejamento tributário, defesa em execuções fiscais e recuperação de créditos." }
-  ];
+    { icon: <FaBriefcase />, title: "Direito Empresarial", description: "Assessoria jurídica completa para empresas, desde constituição até questões contratuais, societárias e recuperação judicial." },
+    { icon: <FaGavel />, title: "Direito Civil", description: "Atuação em ações indenizatórias, responsabilidade civil, contratos em geral e obrigações." },
+    { icon: <FaPiggyBank />, title: "Direito Previdenciário", description: "Atuação na concessão e revisão de aposentadorias, pensões, auxílios e benefícios assistenciais, incluindo demandas contra o INSS e orientações para assegurar direitos previdenciários." },
+    { icon: <FaLandmark />, title: "Direito Tributário", description: "Atuação em planejamento fiscal, defesas administrativas e judiciais, recuperação de tributos, contestações de autuações e orientação para cumprimento das obrigações tributárias." }
+  ].sort((a, b) => a.title.localeCompare(b.title)); // Ordenação alfabética
 
   return (
     <section id="services" className="section-services">
