@@ -1,5 +1,3 @@
-import React from 'react';
-
 const About = () => {
   return (
     <section id="about" className="section-about">
@@ -9,7 +7,7 @@ const About = () => {
         </div>
         <div className="about-content">
           <div className="about-img">
-            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Belluomini Advocacia" />
+            <img src="images/about.png" alt="Belluomini Advocacia" />
           </div>
           <div className="about-text">
             <h3>Belluomini Advocacia</h3>

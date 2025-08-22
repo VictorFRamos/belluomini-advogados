@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="section-title">
           <h2>Entre em Contato</h2>
         </div>
-        <div className="contact-info">
+        <div className="contact-info-section">
           <div className="contact-card">
             <FaMapMarkerAlt className="contact-icon" />
             <h3>Endereço</h3>

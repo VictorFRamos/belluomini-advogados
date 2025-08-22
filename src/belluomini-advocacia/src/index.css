@@ -1,12 +1,20 @@
 :root {
-  --primary-blue: #0d3b66;       /* Azul principal mais escuro */
-  --secondary-blue: #1a3e72;     /* Azul secundário */
-  --accent-gold: #c6a96c;        /* Dourado sóbrio (substitui o amarelo) */
-  --pure-white: #ffffff;         /* Branco puro */
-  --light-gray: #f8f9fa;         /* Cinza muito claro para fundos */
-  --text-dark: #2c3e50;          /* Azul escuro para texto */
-  --text-medium: #4a5568;        /* Azul médio para texto secundário */
-  --border-light: #e2e8f0;       /* Bordas claras */
+  --primary-blue: #0d3b66;
+  /* Azul principal mais escuro */
+  --secondary-blue: #1a3e72;
+  /* Azul secundário */
+  --accent-gold: #c6a96c;
+  /* Dourado sóbrio (substitui o amarelo) */
+  --pure-white: #ffffff;
+  /* Branco puro */
+  --light-gray: #f8f9fa;
+  /* Cinza muito claro para fundos */
+  --text-dark: #2c3e50;
+  /* Azul escuro para texto */
+  --text-medium: #4a5568;
+  /* Azul médio para texto secundário */
+  --border-light: #e2e8f0;
+  /* Bordas claras */
 }
 
 /* Reset e estilos básicos */
@@ -127,7 +135,8 @@ img {
 
 main {
   flex: 1;
-  padding-top: 90px; /* Compensar o header fixo */
+  padding-top: 90px;
+  /* Compensar o header fixo */
 }
 
 section {
@@ -154,11 +163,11 @@ section:nth-child(even) {
   .container {
     width: 95%;
   }
-  
+
   section {
     padding: 4rem 0;
   }
-  
+
   .section-title h2 {
     font-size: 2rem;
   }
