@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="container footer-content">
-        <div className="logo">Belluomini <span>Advocacia</span></div>
+        <div className="redes-sociais">Redes Sociais</div>
         <div className="social-links">
           <a href="https://wa.me/5516992271825" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
           <a href="https://www.instagram.com/belluomini.advogados" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>

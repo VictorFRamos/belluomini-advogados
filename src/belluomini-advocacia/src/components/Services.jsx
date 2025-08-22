@@ -1,13 +1,22 @@
-import React from 'react';
-import { FaBriefcase, FaGavel, FaBalanceScale, FaLandmark, FaPiggyBank } from 'react-icons/fa';
+import { 
+  FaScroll,
+  FaChartLine,
+  FaShieldAlt,
+  FaBalanceScale,
+  FaBuilding
+} from 'react-icons/fa';
+  import { GiMoneyStack } from 'react-icons/gi';
+import { FaLandmark } from 'react-icons/fa';
 
 const Services = () => {
   const services = [
-    { icon: <FaBalanceScale />, title: "Direito do Consumidor", description: "Defesa dos direitos do consumidor em relações de consumo, vícios de produtos e serviços." },
-    { icon: <FaBriefcase />, title: "Direito Empresarial", description: "Assessoria jurídica completa para empresas, desde constituição até questões contratuais, societárias e recuperação judicial." },
-    { icon: <FaGavel />, title: "Direito Civil", description: "Atuação em ações indenizatórias, responsabilidade civil, contratos em geral e obrigações." },
-    { icon: <FaPiggyBank />, title: "Direito Previdenciário", description: "Atuação na concessão e revisão de aposentadorias, pensões, auxílios e benefícios assistenciais, incluindo demandas contra o INSS e orientações para assegurar direitos previdenciários." },
-    { icon: <FaLandmark />, title: "Direito Tributário", description: "Atuação em planejamento fiscal, defesas administrativas e judiciais, recuperação de tributos, contestações de autuações e orientação para cumprimento das obrigações tributárias." }
+    { icon: <FaShieldAlt />, title: "Direito do Consumidor", description: "Defesa de consumidores e fornecedores em casos de práticas abusivas, vícios de produtos ou serviços e descumprimento contratual." },
+    { icon: <FaChartLine />, title: "Direito Empresarial", description: "Assessoria jurídica a empresas, estruturação societária, contratos comerciais e prevenção de litígios." },
+    { icon: <FaScroll />, title: "Direito Civil", description: "Contratos, indenizações, responsabilidade civil, cobranças e demais relações jurídicas entre pessoas físicas ou jurídicas." },
+    { icon: <FaLandmark />, title: "Direito Previdenciário", description: "Concessão e revisão de aposentadorias, pensões, auxílios e benefícios junto ao INSS." },
+    { icon: <GiMoneyStack />, title: "Direito Tributário", description: "Planejamento fiscal, defesas administrativas e judiciais, revisão de malha fiscal, recuperação de tributos e orientação tributária." },
+    { icon: <FaBalanceScale />, title: "Direito Trabalhista", description: "Atuação para empresas e trabalhadores em reclamações, rescisões, acordos e consultoria preventiva." },
+    { icon: <FaBuilding />, title: "Holding Familiar", description: "Estruturação e gestão de holdings para proteção patrimonial, planejamento sucessório e otimização tributária." }
   ].sort((a, b) => a.title.localeCompare(b.title)); // Ordenação alfabética
 
   return (
