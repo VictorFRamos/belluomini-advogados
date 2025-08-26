@@ -11,6 +11,14 @@ import './App.css';
 
 function App() {
   return (
+    <>
+    <Helmet>
+        <title>Belluomini Advocacia</title>
+        <meta name="description" content="Escritório de advocacia fundado por Mateus Fernando Belluomini dos Santos e Luis Gustavo de Oliveira Belluomini, com sólida experiência e atuação nas principais áreas do Direito." />
+        <meta property="og:title" content="Belluomini Advocacia" />
+        <meta property="og:description" content="Escritório de advocacia fundado por Mateus Fernando Belluomini dos Santos e Luis Gustavo de Oliveira Belluomini, com sólida experiência e atuação nas principais áreas do Direito." />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
     <div className="App">
       <Header />
       <main>
@@ -22,7 +30,8 @@ function App() {
       <Footer />
       <WhatsAppFloat />
       <Chatbot />
-    </div>
+      </div>
+      </>
   );
 }
 

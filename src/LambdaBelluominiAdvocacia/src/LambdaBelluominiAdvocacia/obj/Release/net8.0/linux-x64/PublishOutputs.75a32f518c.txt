@@ -1,0 +1,7 @@
+C:\projetos-pessoais\belluomini-advogados\src\LambdaBelluominiAdvocacia\src\LambdaBelluominiAdvocacia\bin\Release\net8.0\publish\LambdaBelluominiAdvocacia.deps.json
+C:\projetos-pessoais\belluomini-advogados\src\LambdaBelluominiAdvocacia\src\LambdaBelluominiAdvocacia\bin\Release\net8.0\publish\LambdaBelluominiAdvocacia.runtimeconfig.json
+C:\projetos-pessoais\belluomini-advogados\src\LambdaBelluominiAdvocacia\src\LambdaBelluominiAdvocacia\bin\Release\net8.0\publish\LambdaBelluominiAdvocacia.pdb
+C:\projetos-pessoais\belluomini-advogados\src\LambdaBelluominiAdvocacia\src\LambdaBelluominiAdvocacia\bin\Release\net8.0\publish\Amazon.Lambda.APIGatewayEvents.dll
+C:\projetos-pessoais\belluomini-advogados\src\LambdaBelluominiAdvocacia\src\LambdaBelluominiAdvocacia\bin\Release\net8.0\publish\Amazon.Lambda.Core.dll
+C:\projetos-pessoais\belluomini-advogados\src\LambdaBelluominiAdvocacia\src\LambdaBelluominiAdvocacia\bin\Release\net8.0\publish\Amazon.Lambda.Serialization.SystemTextJson.dll
+C:\projetos-pessoais\belluomini-advogados\src\LambdaBelluominiAdvocacia\src\LambdaBelluominiAdvocacia\bin\Release\net8.0\publish\LambdaBelluominiAdvocacia.dll

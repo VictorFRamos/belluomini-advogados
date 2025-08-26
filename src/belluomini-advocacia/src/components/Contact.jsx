@@ -1,7 +1,35 @@
-import React from 'react';
+import React, { useRef, useState }  from 'react';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
+import emailjs from "@emailjs/browser";
+
 
 const Contact = () => {
+
+    const form = useRef();
+const [status, setStatus] = useState("");
+  
+ const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_jkjkotr",      // service id
+        "template_wwyq67u",     // substitua
+        form.current,
+        "vnH-vqD6pMze9Bbz8"       // public key
+      )
+      .then(
+        () => {
+          setStatus("Mensagem enviada com sucesso ✔️");
+          form.current.reset();
+        },
+        (error) => {
+          setStatus("Erro ao enviar ❗" + error.text);
+        }
+      );
+};
+  
+  
   return (
     <section id="contact" className="section-contact">
       <div className="container">
@@ -26,7 +54,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-form">
-          <form id="contactForm">
+          <form id="contactForm" ref={form} onSubmit={sendEmail}>
             <div className="form-group">
               <label htmlFor="name">Nome Completo</label>
               <input type="text" id="name" name="name" required />
@@ -40,15 +68,12 @@ const Contact = () => {
               <input type="tel" id="phone" name="phone" />
             </div>
             <div className="form-group">
-              <label htmlFor="subject">Assunto</label>
-              <input type="text" id="subject" name="subject" required />
-            </div>
-            <div className="form-group">
               <label htmlFor="message">Mensagem</label>
               <textarea id="message" name="message" required></textarea>
             </div>
             <button type="submit" className="btn">Enviar Mensagem</button>
           </form>
+            {status && <p>{status}</p>}
         </div>
       </div>
     </section>
