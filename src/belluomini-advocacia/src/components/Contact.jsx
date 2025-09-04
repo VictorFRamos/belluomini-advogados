@@ -1,6 +1,5 @@
 import React, { useRef, useState }  from 'react';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
-import emailjs from "@emailjs/browser";
 
 
 const Contact = () => {
@@ -8,27 +7,48 @@ const Contact = () => {
     const form = useRef();
 const [status, setStatus] = useState("");
   
- const sendEmail = (e) => {
+const sendEmail = async (e) => {
     e.preventDefault();
+    
+    // Mostrar estado de carregamento
+    setStatus("Enviando mensagem...");
+    
+    try {
+      // Preparar os dados do formulário
+      const formData = {
+        nome: form.current.nome.value,
+        email: form.current.email.value,
+        telefone: form.current.telefone.value,
+        mensagem: form.current.mensagem.value
+      };
 
-    emailjs
-      .sendForm(
-        "service_jkjkotr",      // service id
-        "template_wwyq67u",     // substitua
-        form.current,
-        "vnH-vqD6pMze9Bbz8"       // public key
-      )
-      .then(
-        () => {
-          setStatus("Mensagem enviada com sucesso ✔️");
-          form.current.reset();
+      // Fazer a requisição para a API
+      const response = await fetch('https://u3hhepw232.execute-api.sa-east-1.amazonaws.com/Prod/api/Email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        (error) => {
-          setStatus("Erro ao enviar ❗" + error.text);
-        }
-      );
-};
-  
+        body: JSON.stringify(formData)
+      });
+
+      // Verificar se a requisição foi bem-sucedida
+      if (response.ok) {
+        const data = await response.json();
+        setStatus("Mensagem enviada com sucesso! Entraremos em contato em breve.");
+        
+        // Limpar o formulário após o envio bem-sucedido
+        form.current.reset();
+      } else {
+        // Se a resposta não estiver OK, tentar obter detalhes do erro
+        const errorData = await response.text();
+        setStatus(`Erro ao enviar mensagem: ${response.status} - ${errorData}`);
+      }
+    } catch (error) {
+      // Capturar erros de rede ou outros problemas
+      console.error('Erro ao enviar formulário:', error);
+      setStatus("Erro de conexão. Por favor, tente novamente mais tarde.");
+    }
+  };
   
   return (
     <section id="contact" className="section-contact">
@@ -57,7 +77,7 @@ const [status, setStatus] = useState("");
           <form id="contactForm" ref={form} onSubmit={sendEmail}>
             <div className="form-group">
               <label htmlFor="name">Nome Completo</label>
-              <input type="text" id="name" name="name" required />
+              <input type="text" id="name" name="nome" required />
             </div>
             <div className="form-group">
               <label htmlFor="email">Email</label>
@@ -65,11 +85,11 @@ const [status, setStatus] = useState("");
             </div>
             <div className="form-group">
               <label htmlFor="phone">Telefone</label>
-              <input type="tel" id="phone" name="phone" />
+              <input type="tel" id="phone" name="telefone" />
             </div>
             <div className="form-group">
               <label htmlFor="message">Mensagem</label>
-              <textarea id="message" name="message" required></textarea>
+              <textarea id="message" name="mensagem" required></textarea>
             </div>
             <button type="submit" className="btn">Enviar Mensagem</button>
           </form>

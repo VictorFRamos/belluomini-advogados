@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BelluominiAdvocaciaRestApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd9be5ba0efab7b4f1ae0d86067de18150206455")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34c84d046e36baca7ff51ab24f7e782a8dd3a653")]
 [assembly: System.Reflection.AssemblyProductAttribute("BelluominiAdvocaciaRestApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BelluominiAdvocaciaRestApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -34,9 +34,9 @@ header {
 }
 
 .logo img {
-  width: 45px;
+  width: 100px;
   /* Tamanho reduzido */
-  height: 45px;
+  height: 100px;
   /* Altura igual à largura para formar um círculo perfeito */
   border-radius: 50%;
   /* Torna a imagem perfeitamente circular */
@@ -923,4 +923,17 @@ footer {
   .quick-questions {
     grid-template-columns: 1fr;
   }
+}
+
+.status-message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.status-message:not(:empty) {
+  background-color: #f0f0f0;
+  border-left: 4px solid #1a3a5f;
 }

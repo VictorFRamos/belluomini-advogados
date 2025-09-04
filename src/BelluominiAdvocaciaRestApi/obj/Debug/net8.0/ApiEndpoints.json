@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "BelluominiAdvocaciaRestApiRestApi.Controllers.EmailController",
+    "Method": "Enviar",
+    "RelativePath": "api/Email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mensagem",
+        "Type": "BelluominiAdvocaciaRestApiRestApi.Controllers.EmailController\u002BMensagemVm",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

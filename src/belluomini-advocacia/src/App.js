@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
 import Chatbot from './components/Chatbot';
 import './App.css';
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
