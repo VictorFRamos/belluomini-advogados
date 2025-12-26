@@ -1,0 +1,8 @@
+{
+  "name": "Belluomini Advocacia Premium",
+  "description": "Uma plataforma jurídica moderna e sofisticada focada em Direito Imobiliário e Tributário, oferecendo soluções definitivas para proteção de patrimônio e tranquilidade familiar.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
