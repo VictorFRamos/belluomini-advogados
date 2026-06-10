@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "publish": "vite build && aws s3 sync dist/ s3://belluominiadvocacia.com.br --profile awsVitox"
+    "publish": "vite build && aws s3 sync dist/ s3://belluominiadvocacia --profile awsVitox"
   },
   "dependencies": {
     "@google/genai": "^1.34.0",
